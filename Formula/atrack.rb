@@ -5,13 +5,13 @@
 class Atrack < Formula
   desc "Terminal CLI tool for tracking AI agent interactions"
   homepage "https://github.com/alfaXphoori/AgentTrack"
-  version "0.14.3"
+  version "0.14.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.14.3/AgentTrack_Darwin_x86_64.tar.gz"
-      sha256 "aae7742cd8b782132287bea3214c7aaa64cec994e4969ad8321d4965b6db4ee1"
+      url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.14.4/AgentTrack_Darwin_x86_64.tar.gz"
+      sha256 "a81bce29a288b440975ddfea3d701506a4fce1b80a8acb337c1f155fc8fdc748"
 
       define_method(:install) do
         bin.install "atrack"
@@ -21,8 +21,8 @@ class Atrack < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.14.3/AgentTrack_Darwin_arm64.tar.gz"
-      sha256 "9a36890060938250ca8f9eea8282ed41c87165f79d2ca38eb3e869349eaaee80"
+      url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.14.4/AgentTrack_Darwin_arm64.tar.gz"
+      sha256 "9f455e8f76fc28f7af292b609aa43643ca77c178a6e984f3fe16fceca7f9d1da"
 
       define_method(:install) do
         bin.install "atrack"
@@ -35,8 +35,8 @@ class Atrack < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.14.3/AgentTrack_Linux_x86_64.tar.gz"
-      sha256 "353995d23d0b681bd3a5efeadd5b73bfea59466028609415a9740ac454bfd3a2"
+      url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.14.4/AgentTrack_Linux_x86_64.tar.gz"
+      sha256 "58003a5b711d318e6b34b5cb328fa813be80abc4ce334631bbdca0adcdc28778"
       define_method(:install) do
         bin.install "atrack"
         bin.install "scripts/gemiatrack.sh" => "gemiatrack"
@@ -45,8 +45,8 @@ class Atrack < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.14.3/AgentTrack_Linux_arm64.tar.gz"
-      sha256 "3bd8aabe519b5cc0232b5654faaefbe3e073e7d5fac68c074fdcb91d4307e141"
+      url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.14.4/AgentTrack_Linux_arm64.tar.gz"
+      sha256 "38900a8a987295164200e1d3415a8996616e0a99f4df76df2878ac5becb450aa"
       define_method(:install) do
         bin.install "atrack"
         bin.install "scripts/gemiatrack.sh" => "gemiatrack"
