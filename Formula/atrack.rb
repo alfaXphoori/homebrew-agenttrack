@@ -11,7 +11,7 @@ class Atrack < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.15.1/AgentTrack_Darwin_x86_64.tar.gz"
-      sha256 "978cd3834df78125bf65b8bd9ad793edb8f21192d87e03128dd1130d7d9e106e"
+      sha256 "a6b5ef5ee9822090739ac27834c3c001b310b68447b5fb10f561706fee2644ba"
 
       define_method(:install) do
         bin.install "atrack"
@@ -22,7 +22,7 @@ class Atrack < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.15.1/AgentTrack_Darwin_arm64.tar.gz"
-      sha256 "581922554cafe1b080eaa20f1a63800a6b2e154b11917c5193e5ec9617ee3081"
+      sha256 "25f394743e43f36deb076e44b458d3c9e6bad947870b818d6436699a13d63408"
 
       define_method(:install) do
         bin.install "atrack"
@@ -36,7 +36,7 @@ class Atrack < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.15.1/AgentTrack_Linux_x86_64.tar.gz"
-      sha256 "38d9fe945243bbf65f8c76b7a165d800d70cdc5adbf688c8b4a1d000cf2427aa"
+      sha256 "a137da25a599afde4ae223edd0e84452a9f0d5239d96cab89cf473ad00b285e3"
       define_method(:install) do
         bin.install "atrack"
         bin.install "scripts/gemiatrack.sh" => "gemiatrack"
@@ -46,7 +46,7 @@ class Atrack < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/alfaXphoori/AgentTrack/releases/download/v0.15.1/AgentTrack_Linux_arm64.tar.gz"
-      sha256 "e1f96d99765be875995912e25dd6a18320747207a6a23c00d50e181fa12e84db"
+      sha256 "c12a82a390e6c431aeefea9b79602e3b0965a1deea82a63ee91d4d5fb9b20b5e"
       define_method(:install) do
         bin.install "atrack"
         bin.install "scripts/gemiatrack.sh" => "gemiatrack"
